@@ -1,0 +1,8 @@
+{
+  "api": {
+    "validVersions": [
+      1
+    ],
+    "defaultVersion": 1
+  }
+}

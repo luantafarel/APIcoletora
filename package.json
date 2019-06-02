@@ -1,0 +1,56 @@
+{
+  "name": "tp_sd",
+  "version": "1.0.0",
+  "description": "backend of API coletora",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "stop": "pm2 stop back",
+    "start": "pm2 start ecosystem.config.js --env development",
+    "start-dev": "pm2 start ecosystem.config.js --env development && pm2 logs",
+    "delete": "npm stop && pm2 delete back",
+    "migration-create": "node_modules/.bin/sequelize migration:create --name=generic_name",
+    "migrate": "node_modules/.bin/sequelize db:migrate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wendellferreira/Eleicao.git"
+  },
+  "keywords": [
+    "seeder",
+    "express",
+    "node",
+    "api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wendellferreira/Eleicao/issues"
+  },
+  "homepage": "https://github.com/wendellferreira/Eleicao#readme",
+  "dependencies": {
+    "boom": "^7.3.0",
+    "bully": "^0.2.3",
+    "dotenv": "^8.0.0",
+    "event-stream": "^4.0.1",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "hapi": "^17.8.5",
+    "hapi-api-version": "^2.2.0",
+    "hapi-qs": "^2.0.1",
+    "hapi-route-acl": "^1.0.3",
+    "hapi-swagger": "^9.4.2",
+    "inert": "^5.1.3",
+    "joi": "^14.3.1",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "package": "^1.0.1",
+    "path": "^0.12.7",
+    "pg": "^7.10.0",
+    "sequelize": "^4.13.5",
+    "vision": "^5.4.4"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^5.4.0"
+  }
+}
