@@ -15,7 +15,7 @@ module.exports = {
   list: async (request) => {
     const query = await ApiUtils.requestToQuery(
       request,
-      ['timestamp']
+      ['name']
     )
     const product = await db.Product.scope('compact').findAll(query)
     if (product.length === 0) return Boom.notFound('product_not_found')
