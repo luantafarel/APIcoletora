@@ -9,12 +9,12 @@ module.exports = {
     }
   },
   show: {
-    params: JS.Products.pick('id')
+    params: JS.Product.pick('id')
   },
   create: {
     payload: Joi
       .object(
-        JS.Products.pick(
+        JS.Product.pick(
           'name', 'stock', 'timestamp'
         )
       )
@@ -27,12 +27,12 @@ module.exports = {
       .items(
         Joi
           .object(
-            JS.Products.pick(
+            JS.Product.pick(
               'name', 'stock', 'timestamp'
             )
           ))
   },
   delete: {
-    params: JS.Products.pick('id')
+    params: JS.Product.pick('id')
   }
 }

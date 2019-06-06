@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/wendellferreira/Eleicao#readme",
   "dependencies": {
+    "bluebird": "^3.5.5",
     "boom": "^7.3.0",
     "bully": "^0.2.3",
     "dotenv": "^8.0.0",
@@ -47,6 +48,8 @@
     "package": "^1.0.1",
     "path": "^0.12.7",
     "pg": "^7.10.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
     "sequelize": "^4.13.5",
     "vision": "^5.4.4"
   },

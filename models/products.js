@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-  let Products = sequelize.define('Products', {
+  let Product = sequelize.define('Product', {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
@@ -44,6 +44,6 @@ module.exports = (sequelize, DataTypes) => {
       }
     }
   })
-  if (typeof Products === 'undefined') return
-  return Products
+  if (typeof Product === 'undefined') return
+  return Product
 }
